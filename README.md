@@ -15,17 +15,38 @@ where:
 
 ### Training and evaluation data
 
-The training data consist of 3000 data created synthetically. The data consist of columns indicating the parameters used in calculating volumetric flow rate. The values of the flow rate (Q) were calculated for each values of the parameters. If you would like to check the data or generate more samples, check the file:
+The training dataset comprises 3000 synthetically generated entries. Each entry includes columns representing the parameters used to calculate the volumetric flow rate. The flow rate (Q) values were computed for each set of parameters. To review the data or create additional samples, refer to the file:
 
 ``` sh
     dataGen.py
 ``` 
-The evaluation data consist of 10 samples to evaluate the model and this is geerated synthetically.
+The evaluation dataset contains 10 synthetic samples designed to assess the model's performance.
 
-## Clone the repository
+### Clone the repository
 
 To clone this repository, copy and paste the code
 
 ```sh
 git clone https://github.com/Abdulrahman0044/poise-experiment.git
 ```
+
+### Install the requirements
+
+Install the requirements in the `requirements.txt` file
+
+### Run the model
+
+Copy and paste the code below to run the model
+
+```sh
+python model.py
+```
+
+### Evaluate the model's performance
+
+To evaluate the performance of the model, run
+
+```sh
+python evaluation.py
+```
+  

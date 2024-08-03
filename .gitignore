@@ -1,2 +1,5 @@
 # virtual environment
 myenv
+
+# model
+flow_rate.h5
