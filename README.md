@@ -15,12 +15,12 @@ where:
 
 ### Training and evaluation data
 
-The training dataset comprises 3000 synthetically generated entries. Each entry includes columns representing the parameters used to calculate the volumetric flow rate. The flow rate (Q) values were computed for each set of parameters. To review the data or create additional samples, refer to the file:
+The training dataset comprises 50000 synthetically generated entries. Each entry includes columns representing the parameters used to calculate the volumetric flow rate. The flow rate (Q) values were computed for each set of parameters. To review the data or create additional samples, refer to the file:
 
 ``` sh
     dataGen.py
 ``` 
-The evaluation dataset contains 10 synthetic samples designed to assess the model's performance.
+The evaluation dataset contains 4000 synthetic samples designed to assess the model's performance.
 
 ### Clone the repository
 
