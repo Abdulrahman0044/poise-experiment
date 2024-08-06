@@ -6,7 +6,7 @@ fake = Faker()
 
 
 # Define the number of samples
-num_samples = 10
+num_samples = 4000
 
 # Generate random values within reasonable ranges
 radii = [fake.random.uniform(0.0001, 0.01) for _ in range(num_samples)]  # pipe radius in meters

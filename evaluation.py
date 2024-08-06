@@ -8,7 +8,7 @@ import pandas as pd
 model = load_model('flow_rate.h5')
 
 # Load the data
-data = pd.read_csv('evaluation_fluid_flow_data.csv')
+data = pd.read_csv(r'.\PoiseExperiment\data\evaluation_fluid_flow_data.csv')
 
 # Assume 'scaler' is the scaler used during training
 scaler = StandardScaler()
@@ -23,17 +23,11 @@ data['predicted_Q'] = predicted_flow_rates
 print(data)
 
 # Visualize predicted flow rates
-plt.scatter(range(10), data['predicted_Q'])
+plt.scatter(range(4000), data['predicted_Q'])
 plt.xlabel('Sample')
 plt.ylabel('Predicted Flow Rate (Q)')
-plt.title('Predicted Flow Rates for 10 Parameters')
+plt.title('Predicted Flow Rates for 4000 Parameters')
 plt.show()
-plt.savefig('scatter.png')
+plt.savefig('image.png')
 
-# # Plot the velocity profile
-# plt.plot(data['r'], data['predicted_Q'])
-# plt.xlabel('Radius (m)')
-# plt.ylabel('Velocity (m/s)')
-# plt.title('Velocity Profile of Laminar Flow in a Pipe')
-# plt.grid(True)
-# plt.show()
+
